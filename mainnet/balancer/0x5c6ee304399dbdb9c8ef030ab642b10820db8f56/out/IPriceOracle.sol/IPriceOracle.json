@@ -1,0 +1,881 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLargestSafeQueryWindow",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IPriceOracle.Variable",
+          "name": "variable",
+          "type": "uint8"
+        }
+      ],
+      "name": "getLatest",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum IPriceOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ago",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IPriceOracle.OracleAccumulatorQuery[]",
+          "name": "queries",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "getPastAccumulators",
+      "outputs": [
+        {
+          "internalType": "int256[]",
+          "name": "results",
+          "type": "int256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum IPriceOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "secs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ago",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IPriceOracle.OracleAverageQuery[]",
+          "name": "queries",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "getTimeWeightedAverage",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "results",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLargestSafeQueryWindow()": "ffd088eb",
+    "getLatest(uint8)": "b10be739",
+    "getPastAccumulators((uint8,uint256)[])": "6b843239",
+    "getTimeWeightedAverage((uint8,uint256,uint256)[])": "1dccd830"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLargestSafeQueryWindow\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum IPriceOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"}],\"name\":\"getLatest\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum IPriceOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"ago\",\"type\":\"uint256\"}],\"internalType\":\"struct IPriceOracle.OracleAccumulatorQuery[]\",\"name\":\"queries\",\"type\":\"tuple[]\"}],\"name\":\"getPastAccumulators\",\"outputs\":[{\"internalType\":\"int256[]\",\"name\":\"results\",\"type\":\"int256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum IPriceOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"secs\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"ago\",\"type\":\"uint256\"}],\"internalType\":\"struct IPriceOracle.OracleAverageQuery[]\",\"name\":\"queries\",\"type\":\"tuple[]\"}],\"name\":\"getTimeWeightedAverage\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"results\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface for querying historical data from a Pool that can be used as a Price Oracle. This lets third parties retrieve average prices of tokens held by a Pool over a given period of time, as well as the price of the Pool share token (BPT) and invariant. Since the invariant is a sensible measure of Pool liquidity, it can be used to compare two different price sources, and choose the most liquid one. Once the oracle is fully initialized, all queries are guaranteed to succeed as long as they require no data that is not older than the largest safe query window.\",\"kind\":\"dev\",\"methods\":{\"getLargestSafeQueryWindow()\":{\"details\":\"Returns largest time window that can be safely queried, where 'safely' means the Oracle is guaranteed to be able to produce a result and not revert. If a query has a non-zero `ago` value, then `secs + ago` (the oldest point in time) must be smaller than this value for 'safe' queries.\"},\"getLatest(uint8)\":{\"details\":\"Returns latest sample of `variable`. Prices are represented as 18 decimal fixed point values.\"},\"getPastAccumulators((uint8,uint256)[])\":{\"details\":\"Returns the accumulators corresponding to each of `queries`.\"},\"getTimeWeightedAverage((uint8,uint256,uint256)[])\":{\"details\":\"Returns the time average weighted price corresponding to each of `queries`. Prices are represented as 18 decimal fixed point values.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/pools/IPriceOracle.sol\":\"IPriceOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/pools/IPriceOracle.sol\":{\"keccak256\":\"0x54025df019033dae6f6c224ca4de8ffd83ee3e0df163781ac09faf7ef1f88e3b\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://2c98e00cb85cde4f8d5db9fdb65eb8ff2fd9d78054846dcff175ec6dd2c49e2b\",\"dweb:/ipfs/QmSgMmYzSvdUde1XzFRdJVBANKmidC2TkKBA46VUvE8BtG\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLargestSafeQueryWindow",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum IPriceOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLatest",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IPriceOracle.OracleAccumulatorQuery[]",
+              "name": "queries",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum IPriceOracle.Variable",
+                  "name": "variable",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "ago",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPastAccumulators",
+          "outputs": [
+            {
+              "internalType": "int256[]",
+              "name": "results",
+              "type": "int256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IPriceOracle.OracleAverageQuery[]",
+              "name": "queries",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum IPriceOracle.Variable",
+                  "name": "variable",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "secs",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "ago",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTimeWeightedAverage",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "results",
+              "type": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getLargestSafeQueryWindow()": {
+            "details": "Returns largest time window that can be safely queried, where 'safely' means the Oracle is guaranteed to be able to produce a result and not revert. If a query has a non-zero `ago` value, then `secs + ago` (the oldest point in time) must be smaller than this value for 'safe' queries."
+          },
+          "getLatest(uint8)": {
+            "details": "Returns latest sample of `variable`. Prices are represented as 18 decimal fixed point values."
+          },
+          "getPastAccumulators((uint8,uint256)[])": {
+            "details": "Returns the accumulators corresponding to each of `queries`."
+          },
+          "getTimeWeightedAverage((uint8,uint256,uint256)[])": {
+            "details": "Returns the time average weighted price corresponding to each of `queries`. Prices are represented as 18 decimal fixed point values."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/pools/IPriceOracle.sol": "IPriceOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/pools/IPriceOracle.sol": {
+        "keccak256": "0x54025df019033dae6f6c224ca4de8ffd83ee3e0df163781ac09faf7ef1f88e3b",
+        "urls": [
+          "bzz-raw://2c98e00cb85cde4f8d5db9fdb65eb8ff2fd9d78054846dcff175ec6dd2c49e2b",
+          "dweb:/ipfs/QmSgMmYzSvdUde1XzFRdJVBANKmidC2TkKBA46VUvE8BtG"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/pools/IPriceOracle.sol",
+    "id": 6538,
+    "exportedSymbols": {
+      "IPriceOracle": [
+        6537
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "688:3576:22",
+    "nodes": [
+      {
+        "id": 6484,
+        "nodeType": "PragmaDirective",
+        "src": "688:23:22",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ]
+      },
+      {
+        "id": 6485,
+        "nodeType": "PragmaDirective",
+        "src": "712:33:22",
+        "nodes": [],
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ]
+      },
+      {
+        "id": 6537,
+        "nodeType": "ContractDefinition",
+        "src": "1349:2914:22",
+        "nodes": [
+          {
+            "id": 6490,
+            "nodeType": "EnumDefinition",
+            "src": "2287:50:22",
+            "nodes": [],
+            "canonicalName": "IPriceOracle.Variable",
+            "members": [
+              {
+                "id": 6487,
+                "name": "PAIR_PRICE",
+                "nodeType": "EnumValue",
+                "src": "2303:10:22"
+              },
+              {
+                "id": 6488,
+                "name": "BPT_PRICE",
+                "nodeType": "EnumValue",
+                "src": "2315:9:22"
+              },
+              {
+                "id": 6489,
+                "name": "INVARIANT",
+                "nodeType": "EnumValue",
+                "src": "2326:9:22"
+              }
+            ],
+            "name": "Variable"
+          },
+          {
+            "id": 6500,
+            "nodeType": "FunctionDefinition",
+            "src": "2511:142:22",
+            "nodes": [],
+            "documentation": {
+              "id": 6491,
+              "nodeType": "StructuredDocumentation",
+              "src": "2343:163:22",
+              "text": " @dev Returns the time average weighted price corresponding to each of `queries`. Prices are represented as 18\n decimal fixed point values."
+            },
+            "functionSelector": "1dccd830",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTimeWeightedAverage",
+            "parameters": {
+              "id": 6495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6494,
+                  "mutability": "mutable",
+                  "name": "queries",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6500,
+                  "src": "2543:35:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_OracleAverageQuery_$6515_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IPriceOracle.OracleAverageQuery[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6492,
+                      "name": "OracleAverageQuery",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 6515,
+                      "src": "2543:18:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OracleAverageQuery_$6515_storage_ptr",
+                        "typeString": "struct IPriceOracle.OracleAverageQuery"
+                      }
+                    },
+                    "id": 6493,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2543:20:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_OracleAverageQuery_$6515_storage_$dyn_storage_ptr",
+                      "typeString": "struct IPriceOracle.OracleAverageQuery[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2542:37:22"
+            },
+            "returnParameters": {
+              "id": 6499,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6498,
+                  "mutability": "mutable",
+                  "name": "results",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6500,
+                  "src": "2627:24:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6496,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2627:7:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 6497,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2627:9:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2626:26:22"
+            },
+            "scope": 6537,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6508,
+            "nodeType": "FunctionDefinition",
+            "src": "2781:70:22",
+            "nodes": [],
+            "documentation": {
+              "id": 6501,
+              "nodeType": "StructuredDocumentation",
+              "src": "2659:117:22",
+              "text": " @dev Returns latest sample of `variable`. Prices are represented as 18 decimal fixed point values."
+            },
+            "functionSelector": "b10be739",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatest",
+            "parameters": {
+              "id": 6504,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6503,
+                  "mutability": "mutable",
+                  "name": "variable",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6508,
+                  "src": "2800:17:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$6490",
+                    "typeString": "enum IPriceOracle.Variable"
+                  },
+                  "typeName": {
+                    "id": 6502,
+                    "name": "Variable",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6490,
+                    "src": "2800:8:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Variable_$6490",
+                      "typeString": "enum IPriceOracle.Variable"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2799:19:22"
+            },
+            "returnParameters": {
+              "id": 6507,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6506,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6508,
+                  "src": "2842:7:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6505,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2842:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2841:9:22"
+            },
+            "scope": 6537,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6515,
+            "nodeType": "StructDefinition",
+            "src": "3268:103:22",
+            "nodes": [],
+            "canonicalName": "IPriceOracle.OracleAverageQuery",
+            "members": [
+              {
+                "constant": false,
+                "id": 6510,
+                "mutability": "mutable",
+                "name": "variable",
+                "nodeType": "VariableDeclaration",
+                "scope": 6515,
+                "src": "3304:17:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Variable_$6490",
+                  "typeString": "enum IPriceOracle.Variable"
+                },
+                "typeName": {
+                  "id": 6509,
+                  "name": "Variable",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 6490,
+                  "src": "3304:8:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$6490",
+                    "typeString": "enum IPriceOracle.Variable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6512,
+                "mutability": "mutable",
+                "name": "secs",
+                "nodeType": "VariableDeclaration",
+                "scope": 6515,
+                "src": "3331:12:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6511,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "3331:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6514,
+                "mutability": "mutable",
+                "name": "ago",
+                "nodeType": "VariableDeclaration",
+                "scope": 6515,
+                "src": "3353:11:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6513,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "3353:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OracleAverageQuery",
+            "scope": 6537,
+            "visibility": "public"
+          },
+          {
+            "id": 6521,
+            "nodeType": "FunctionDefinition",
+            "src": "3718:69:22",
+            "nodes": [],
+            "documentation": {
+              "id": 6516,
+              "nodeType": "StructuredDocumentation",
+              "src": "3377:336:22",
+              "text": " @dev Returns largest time window that can be safely queried, where 'safely' means the Oracle is guaranteed to be\n able to produce a result and not revert.\n If a query has a non-zero `ago` value, then `secs + ago` (the oldest point in time) must be smaller than this\n value for 'safe' queries."
+            },
+            "functionSelector": "ffd088eb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLargestSafeQueryWindow",
+            "parameters": {
+              "id": 6517,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3752:2:22"
+            },
+            "returnParameters": {
+              "id": 6520,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6519,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6521,
+                  "src": "3778:7:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6518,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3778:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3777:9:22"
+            },
+            "scope": 6537,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6531,
+            "nodeType": "FunctionDefinition",
+            "src": "3882:142:22",
+            "nodes": [],
+            "documentation": {
+              "id": 6522,
+              "nodeType": "StructuredDocumentation",
+              "src": "3793:84:22",
+              "text": " @dev Returns the accumulators corresponding to each of `queries`."
+            },
+            "functionSelector": "6b843239",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPastAccumulators",
+            "parameters": {
+              "id": 6526,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6525,
+                  "mutability": "mutable",
+                  "name": "queries",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6531,
+                  "src": "3911:39:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_OracleAccumulatorQuery_$6536_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IPriceOracle.OracleAccumulatorQuery[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6523,
+                      "name": "OracleAccumulatorQuery",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 6536,
+                      "src": "3911:22:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OracleAccumulatorQuery_$6536_storage_ptr",
+                        "typeString": "struct IPriceOracle.OracleAccumulatorQuery"
+                      }
+                    },
+                    "id": 6524,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3911:24:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_OracleAccumulatorQuery_$6536_storage_$dyn_storage_ptr",
+                      "typeString": "struct IPriceOracle.OracleAccumulatorQuery[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3910:41:22"
+            },
+            "returnParameters": {
+              "id": 6530,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6529,
+                  "mutability": "mutable",
+                  "name": "results",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6531,
+                  "src": "3999:23:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_int256_$dyn_memory_ptr",
+                    "typeString": "int256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6527,
+                      "name": "int256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "3999:6:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "id": 6528,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3999:8:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_int256_$dyn_storage_ptr",
+                      "typeString": "int256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3998:25:22"
+            },
+            "scope": 6537,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6536,
+            "nodeType": "StructDefinition",
+            "src": "4176:85:22",
+            "nodes": [],
+            "canonicalName": "IPriceOracle.OracleAccumulatorQuery",
+            "members": [
+              {
+                "constant": false,
+                "id": 6533,
+                "mutability": "mutable",
+                "name": "variable",
+                "nodeType": "VariableDeclaration",
+                "scope": 6536,
+                "src": "4216:17:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Variable_$6490",
+                  "typeString": "enum IPriceOracle.Variable"
+                },
+                "typeName": {
+                  "id": 6532,
+                  "name": "Variable",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 6490,
+                  "src": "4216:8:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$6490",
+                    "typeString": "enum IPriceOracle.Variable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6535,
+                "mutability": "mutable",
+                "name": "ago",
+                "nodeType": "VariableDeclaration",
+                "scope": 6536,
+                "src": "4243:11:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6534,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "4243:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OracleAccumulatorQuery",
+            "scope": 6537,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 6486,
+          "nodeType": "StructuredDocumentation",
+          "src": "747:601:22",
+          "text": " @dev Interface for querying historical data from a Pool that can be used as a Price Oracle.\n This lets third parties retrieve average prices of tokens held by a Pool over a given period of time, as well as the\n price of the Pool share token (BPT) and invariant. Since the invariant is a sensible measure of Pool liquidity, it\n can be used to compare two different price sources, and choose the most liquid one.\n Once the oracle is fully initialized, all queries are guaranteed to succeed as long as they require no data that\n is not older than the largest safe query window."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          6537
+        ],
+        "name": "IPriceOracle",
+        "scope": 6538
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 22
+}

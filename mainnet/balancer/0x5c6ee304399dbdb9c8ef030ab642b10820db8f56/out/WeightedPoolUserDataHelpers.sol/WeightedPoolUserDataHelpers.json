@@ -1,0 +1,2685 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220293a3def5f066f9447c02add4aa3277a52a0ad765c6ac097cbf807dade07b3ba64736f6c63430007060033",
+    "sourceMap": "788:1745:32:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220293a3def5f066f9447c02add4aa3277a52a0ad765c6ac097cbf807dade07b3ba64736f6c63430007060033",
+    "sourceMap": "788:1745:32:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/pools/weighted/WeightedPoolUserDataHelpers.sol\":\"WeightedPoolUserDataHelpers\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/lib/helpers/Authentication.sol\":{\"keccak256\":\"0xea892213ec2967f53e26a0dd833bde01e4d9b6e49dd91e6c59ff00044f83c28d\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://0bc36f6335254bef8a4515e898a7ce5b3f36350e4d7d1dd45a0aa3d1356fdae5\",\"dweb:/ipfs/QmRRatu77hTPReUnRidk3wjgEMyGYVgh9wDrkiMiKmtWtR\"]},\"contracts/lib/helpers/BalancerErrors.sol\":{\"keccak256\":\"0x4fccd72b44004509b27032aa9e9e91a24becaa67d65b79564e41cb99758f80d4\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://a1ee2a9953990313f6431e9449bc2a4fa3046833b302e9d82368fb959f57c99b\",\"dweb:/ipfs/QmatdXi22EDCpokZAWFGRMR28B9ES4TpiNnFwzUDjVqfzC\"]},\"contracts/lib/helpers/IAuthentication.sol\":{\"keccak256\":\"0xfd687ced203d2c6da8189792e1719a5182faf45956129388b231ee76740b99a6\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://581aa664e84e950cd9bb747bf6022867db63c64f67d9556a86b5f04f871c2c5d\",\"dweb:/ipfs/QmRa6EEV3LXJaHzymztiLqyeAzmE4jAgBEEi3mi8R5cfFa\"]},\"contracts/lib/helpers/ISignaturesValidator.sol\":{\"keccak256\":\"0x2fe46b13b7c8bfc6f5c539c0b73d6325813f383f551b71fb6bca8dafd06964e1\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://8e651ae7a3a3652c8bb7aaa42c2cce5924310df62a923d9ec50ddb9c850d2995\",\"dweb:/ipfs/QmTHz9y18L5FD7v9GcvxGWSLJuin2KCUEYoARTgz8njce8\"]},\"contracts/lib/helpers/ITemporarilyPausable.sol\":{\"keccak256\":\"0xb3e5b7c63f80b80ef3f0138eac56c397a439bf6b667fc06d5061aa869828b562\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://978d66fba0721a1a67e29a32eaddab8d1f92ab2fb2d611724ea8d0d3c9b0e95b\",\"dweb:/ipfs/QmfG4foZvx3NDZao7d4VvGzL4Uxtk8VWNJXvgo9fiAJxZv\"]},\"contracts/lib/helpers/InputHelpers.sol\":{\"keccak256\":\"0xd58eb6851269729d3ea0d739f812c67c3e750b046ef1653ae12134e668925d28\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://9cb5db2184b915b6640593f2e0840de1c39144b1d692f5f1bb13958b28647d7c\",\"dweb:/ipfs/QmbdfxJJo5hwJMG1Cvi2DoBthwENVkdAGJ6JDAWP8JLzW9\"]},\"contracts/lib/helpers/TemporarilyPausable.sol\":{\"keccak256\":\"0xd20f7cbc60072fc73aa137ce644777195de3143bc6ce910c43501647f3ce6c60\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://b3c5a3589b0d85a051977e77e1fe1e9b41c4d005a8a4ac3156995e9fddd9d926\",\"dweb:/ipfs/QmZwwhQQFL9tK1vNBTKB4E5ZGBdwfgGrgv2fjHgBaZTENi\"]},\"contracts/lib/math/FixedPoint.sol\":{\"keccak256\":\"0x38720507bb6c838df83953d1ffa88b97d0e06baefa0e3e387303cb8a090a49f5\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://fd74d7d2f8881dcc5a3aa4ce732f84b2cbb15de117e1fc4735a3d58a4062524a\",\"dweb:/ipfs/QmSYxuM8HhMn3oPxZ66PbukDikGPkHs3FLD7miFbky2EfW\"]},\"contracts/lib/math/LogExpMath.sol\":{\"keccak256\":\"0x66c6a4efc58bcc18d11fdc3236ec53f6044944918e86116f3aa3deee1daac8ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c5deeae731108f0d2fed1ae8c6bcb2796b5a93f6c260019306d175bd3baa2988\",\"dweb:/ipfs/QmexvLdJbGMSrmaAVrZDaHVfCaAzQpV2ZybQMnfX4zXsPU\"]},\"contracts/lib/math/Math.sol\":{\"keccak256\":\"0x98cf5d1e9b91be5a4315c1aa7bf6480e097113c5f9a9200c92d123bc4ece9ec4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9617a16524a7e9b82f6962f76ef2d8a47d14285c001d4bb5e88574cb33e0ebe3\",\"dweb:/ipfs/QmRBvV1X5FEsyxDAfMPZ4GNp7HvfK5gaKaLpp6o1EYwfFF\"]},\"contracts/lib/openzeppelin/EIP712.sol\":{\"keccak256\":\"0x0cf3ec5d6130aac057e69df14b1ff87baf9c6c2cb13bc545952def004e629ac0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://446419367266d271bf6953e4ae0423356a5cc4717f7b9a5a0532436de4be2d70\",\"dweb:/ipfs/QmPV56wHs1Mqif6et6TYrhZ2QYPNmiVTmXWvQMhqWfKLk9\"]},\"contracts/lib/openzeppelin/ERC20.sol\":{\"keccak256\":\"0x10a0774f23f09b8617c9c62afe230829175c20be368ff327a7d529e4f7348bcb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d126631fd60ce377ae605e7c2aab275dc7b72aac074940f6e3b36206ed1955ce\",\"dweb:/ipfs/QmP23AyhL4xzHSDikcgpAKuCHoiFKr5qQfCkDAdSsz4peU\"]},\"contracts/lib/openzeppelin/IERC20.sol\":{\"keccak256\":\"0xd828a935a72a6d182912abba290e4debb8c684c36fd756088f7acb30e0b2bb76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1e6ac013b95e9622917c5ad388dc73f0a389a76341597731746e54547aa9de8a\",\"dweb:/ipfs/QmPB8qWcRPZaDsASgQpf5a6i2YrZ4TDV3Ebi25Mn9EAdf4\"]},\"contracts/lib/openzeppelin/IERC20Permit.sol\":{\"keccak256\":\"0xffe929ce55ef0cbdcc60eee8bc9375c295757ad13afe3d757646538aa0429ff5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://90091ad3a860b0baa930d9b4083b503eb9ce2d222f738ce3b009d434271a27ae\",\"dweb:/ipfs/QmeQxy2YHbeumMXxKqEnXF7pGw2Ke43cHzttG59WYHibVV\"]},\"contracts/lib/openzeppelin/ReentrancyGuard.sol\":{\"keccak256\":\"0xfe6da463cd5a6df10b49020a69b0978a4ef65d029e747c515062ec4a3359c464\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://203824853ae4896a6216d53aa537a6941c9992d528c9aa4dd385114dac0f169c\",\"dweb:/ipfs/Qmdb6pN9EVQVHFkxfdMoWUKmRMx7BtVzqcXUqGJh8Xotgy\"]},\"contracts/lib/openzeppelin/SafeERC20.sol\":{\"keccak256\":\"0x16d3e14c841b54a0f59fac0b899c4fa2f7b15d8d24f562a91edaf5aa140d57f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://75a09ab520f733adcd1830075e2024610e10a5fa7da418393feb6a4563eeae62\",\"dweb:/ipfs/QmRUb62Q8i6wX1xw66TWhNRH6Nv247B6QeC75riBUEqHLy\"]},\"contracts/lib/openzeppelin/SafeMath.sol\":{\"keccak256\":\"0xafe0542eb14932a66ce6280fbe9991130ead5bbcb7836d0a822fc4a59810c100\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://140c69f688c58bbf08f7b1b6f76dd89d72f9c84a3aab8ad1194679ee0acaa6e6\",\"dweb:/ipfs/QmUCub3NpdGK1U4xjSwsCHNZnRokcM9NMhRtC2kLefYef8\"]},\"contracts/pools/BalancerPoolToken.sol\":{\"keccak256\":\"0x98ba9ab8cbd475a64405d5eecedbed1bb68b4adca54493894747f8e9f61a9e42\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://b76d6c240ea5bc465a25ae03b498365a33ce2fcaf0d9aa9935f9ea721a2257de\",\"dweb:/ipfs/Qmckfp5pP5c1eFst21NnJgnvyPz9iHGwpWHCXQfJv5HxkR\"]},\"contracts/pools/BaseMinimalSwapInfoPool.sol\":{\"keccak256\":\"0x6a634f43159cd970522a2005d13934d1d56a85edaee4290ded729340761e19c3\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://7df58e880e130adcf476edcf89d32f923a4433bc7e77c208ace5b1fb07f4382e\",\"dweb:/ipfs/QmPzv1PudDqkB9t6fXsQS8vA6kQL81kKdWUC4d5eiF6qDK\"]},\"contracts/pools/BasePool.sol\":{\"keccak256\":\"0x235470c212f95f6ba5faa0bff48dfff5459a4f8e9d97f72169d24985acaff275\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://7dffdac4ab64c43899bf45b69d341cb2394f14dd26f85abab41b7fe632527eba\",\"dweb:/ipfs/QmU4SzSagco6a8X6MuBmrwpjhkSiMf8LQCTr2WexV8tii5\"]},\"contracts/pools/BasePoolAuthorization.sol\":{\"keccak256\":\"0x080dfa64851c8f2bc9e989d37154453cf154609a792f8ca554478450290be7db\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://6ee3e9fc531be5ae6976b4051318f5c9086e508e1cecdb5147dbd3d1c7efe4c0\",\"dweb:/ipfs/QmQBUMC3aq2JY6PeS4baZydYADLgKm9eoHZ8LzsoENZBCd\"]},\"contracts/pools/weighted/WeightedMath.sol\":{\"keccak256\":\"0x675a769ba17ac42c06db05619f3a8d7f2b39bbfcc2798a1f17d6e1e4943943ec\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://595d4e299e90199ba0899a255e8d783ec70196d227b3a5dc1063bf9400ae9c2d\",\"dweb:/ipfs/QmcMts5b15A5KnwmhJiQBbzrZdgggzTcdmKJMqsjXzDyMa\"]},\"contracts/pools/weighted/WeightedPool.sol\":{\"keccak256\":\"0x4e73b22be8c4325be39cc05796926b173b867292d73fe051dcfa49aafd9fb9d7\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://d860d703d2cfa251103fc927f55e2003c8bf49d941d35e3fcfcc6d57d8351612\",\"dweb:/ipfs/QmTgr3Mk2BRj5TJQpbbJiHCjQdugtj96rgd4g2TNictepQ\"]},\"contracts/pools/weighted/WeightedPoolUserDataHelpers.sol\":{\"keccak256\":\"0x6a2f98e68608e65dd9c0de8c57c1fc2e1643789b18bcf75d7109d27cdf45d62f\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://d8cacf0d22464128acf40d1eb55f872592233e883b8cb36ab9fe1051257a52e6\",\"dweb:/ipfs/QmekLKMSgmEfz4tKBnJF9kmPc6PYg2nAs72bwuLT5To3Gt\"]},\"contracts/vault/ProtocolFeesCollector.sol\":{\"keccak256\":\"0x67a0898b29a356085f4d7a83c52d1c794ebf07b6522133c9b9c7f5faf10d2184\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://2bc6a0209840b9b6b695241122646ce9040716237e05b67cdb5445a961e8b374\",\"dweb:/ipfs/QmfCtZLSbBXqMTZBFfzxx3VFquXbbaFD9tsRNc3y5jXozn\"]},\"contracts/vault/interfaces/IAsset.sol\":{\"keccak256\":\"0x70ecf1d48c285d78718bd2e159345677038ed8a81c74444bedd6a5c61af9aff6\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://8c7c210e449ea5d284abeaaed82e3bb3c203b57d8b3e5dfb6daedf76eaae31d1\",\"dweb:/ipfs/QmfJWLPhCG6PcHNJMLNDbAM6nd2ZVFCexCXvJ9qQmRaNbn\"]},\"contracts/vault/interfaces/IAuthorizer.sol\":{\"keccak256\":\"0x792871e208bba1dad291f8d1cffad86f4afa5e2360816bd9c43481f7297155f5\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://af8ab65258e294c8ba0a5feee91208789f641181d225364b02123d38d9eec7d0\",\"dweb:/ipfs/Qmb5HUXRaSrHJafwK1H8XRjcCTnAZMShTvBNhr1ovA1j2m\"]},\"contracts/vault/interfaces/IBasePool.sol\":{\"keccak256\":\"0x1fdce4de26cad355f4ad93e4a5b66d5a5692c4cd2f0b6c2bb2c3aef3ee49422f\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://fde5dea4a8a65dd019813530ecb4cc857484ff104e80cf18c12d196b0ec74973\",\"dweb:/ipfs/QmPyVrmus8pqbPKofTonEgtWCCsn3j4MXFPsy481f8jav8\"]},\"contracts/vault/interfaces/IFlashLoanRecipient.sol\":{\"keccak256\":\"0x6886740dcaebfb24a25f914ce5b4299aeab3fe0cc135a1707c0fe4e3d6d02cb6\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://6a379297af3e38f7ba24c9c26285382bf5d7e36260590f9d06ce1b573cadd7d4\",\"dweb:/ipfs/QmZWeYKn3UDBPJUrFCHty9g9fHWG46Q4BhhddmyfB1Ugj8\"]},\"contracts/vault/interfaces/IMinimalSwapInfoPool.sol\":{\"keccak256\":\"0x7469919e147c0db8b4f290d310ca3816dec5d3c6cc6b258cf6e0df820a20a179\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://ad47775f388a985c265ef4ca1d1531e4bffa97ef51a03fea9273a2ce8f1ab667\",\"dweb:/ipfs/QmZ4mMm2rPPZ4eLHHUY82vxLLRyKXb5ekchgGvDReryiTS\"]},\"contracts/vault/interfaces/IPoolSwapStructs.sol\":{\"keccak256\":\"0xe32bcd1cce37949796369b0026cf5cf34eb7273fa50ac239186e8cd4b822e196\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://902110897e813cd71987854a651fe6386a9329dc22660bff8f55a4f95c0003d1\",\"dweb:/ipfs/QmXt4MGtioai8goMrpawg8a88Qwdnk6P31kmPU1zMJmJ1d\"]},\"contracts/vault/interfaces/IVault.sol\":{\"keccak256\":\"0xc1b1344fcb93f499269d9687514f0a72cc8164cfd3dd3da08a6af1f9e7c60168\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://b7bf8d441a1fdbb2c040c1ee781f0c55b7ba28c1c4f829b6876fc301566b83ba\",\"dweb:/ipfs/QmU2C7d4SKT8nwyXr3MEo2FHPgLUNBVoE1ngcrNHTq3h8q\"]},\"contracts/vault/interfaces/IWETH.sol\":{\"keccak256\":\"0x621a25d9e3f3a4cd9e4493ab330a50a4456b6ea8fc568911fdd5486f78a4d3ab\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://93a5ad052b725c300232952ba067abce53c0b167f0e55c44bfd5ba308d9d542b\",\"dweb:/ipfs/QmdsRjQShAUbA1KGWhoKsvWTR2PffgfXNJBCU5hTmgLJVb\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/pools/weighted/WeightedPoolUserDataHelpers.sol": "WeightedPoolUserDataHelpers"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/lib/helpers/Authentication.sol": {
+        "keccak256": "0xea892213ec2967f53e26a0dd833bde01e4d9b6e49dd91e6c59ff00044f83c28d",
+        "urls": [
+          "bzz-raw://0bc36f6335254bef8a4515e898a7ce5b3f36350e4d7d1dd45a0aa3d1356fdae5",
+          "dweb:/ipfs/QmRRatu77hTPReUnRidk3wjgEMyGYVgh9wDrkiMiKmtWtR"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/BalancerErrors.sol": {
+        "keccak256": "0x4fccd72b44004509b27032aa9e9e91a24becaa67d65b79564e41cb99758f80d4",
+        "urls": [
+          "bzz-raw://a1ee2a9953990313f6431e9449bc2a4fa3046833b302e9d82368fb959f57c99b",
+          "dweb:/ipfs/QmatdXi22EDCpokZAWFGRMR28B9ES4TpiNnFwzUDjVqfzC"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/IAuthentication.sol": {
+        "keccak256": "0xfd687ced203d2c6da8189792e1719a5182faf45956129388b231ee76740b99a6",
+        "urls": [
+          "bzz-raw://581aa664e84e950cd9bb747bf6022867db63c64f67d9556a86b5f04f871c2c5d",
+          "dweb:/ipfs/QmRa6EEV3LXJaHzymztiLqyeAzmE4jAgBEEi3mi8R5cfFa"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/ISignaturesValidator.sol": {
+        "keccak256": "0x2fe46b13b7c8bfc6f5c539c0b73d6325813f383f551b71fb6bca8dafd06964e1",
+        "urls": [
+          "bzz-raw://8e651ae7a3a3652c8bb7aaa42c2cce5924310df62a923d9ec50ddb9c850d2995",
+          "dweb:/ipfs/QmTHz9y18L5FD7v9GcvxGWSLJuin2KCUEYoARTgz8njce8"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/ITemporarilyPausable.sol": {
+        "keccak256": "0xb3e5b7c63f80b80ef3f0138eac56c397a439bf6b667fc06d5061aa869828b562",
+        "urls": [
+          "bzz-raw://978d66fba0721a1a67e29a32eaddab8d1f92ab2fb2d611724ea8d0d3c9b0e95b",
+          "dweb:/ipfs/QmfG4foZvx3NDZao7d4VvGzL4Uxtk8VWNJXvgo9fiAJxZv"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/InputHelpers.sol": {
+        "keccak256": "0xd58eb6851269729d3ea0d739f812c67c3e750b046ef1653ae12134e668925d28",
+        "urls": [
+          "bzz-raw://9cb5db2184b915b6640593f2e0840de1c39144b1d692f5f1bb13958b28647d7c",
+          "dweb:/ipfs/QmbdfxJJo5hwJMG1Cvi2DoBthwENVkdAGJ6JDAWP8JLzW9"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/TemporarilyPausable.sol": {
+        "keccak256": "0xd20f7cbc60072fc73aa137ce644777195de3143bc6ce910c43501647f3ce6c60",
+        "urls": [
+          "bzz-raw://b3c5a3589b0d85a051977e77e1fe1e9b41c4d005a8a4ac3156995e9fddd9d926",
+          "dweb:/ipfs/QmZwwhQQFL9tK1vNBTKB4E5ZGBdwfgGrgv2fjHgBaZTENi"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/math/FixedPoint.sol": {
+        "keccak256": "0x38720507bb6c838df83953d1ffa88b97d0e06baefa0e3e387303cb8a090a49f5",
+        "urls": [
+          "bzz-raw://fd74d7d2f8881dcc5a3aa4ce732f84b2cbb15de117e1fc4735a3d58a4062524a",
+          "dweb:/ipfs/QmSYxuM8HhMn3oPxZ66PbukDikGPkHs3FLD7miFbky2EfW"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/math/LogExpMath.sol": {
+        "keccak256": "0x66c6a4efc58bcc18d11fdc3236ec53f6044944918e86116f3aa3deee1daac8ef",
+        "urls": [
+          "bzz-raw://c5deeae731108f0d2fed1ae8c6bcb2796b5a93f6c260019306d175bd3baa2988",
+          "dweb:/ipfs/QmexvLdJbGMSrmaAVrZDaHVfCaAzQpV2ZybQMnfX4zXsPU"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/math/Math.sol": {
+        "keccak256": "0x98cf5d1e9b91be5a4315c1aa7bf6480e097113c5f9a9200c92d123bc4ece9ec4",
+        "urls": [
+          "bzz-raw://9617a16524a7e9b82f6962f76ef2d8a47d14285c001d4bb5e88574cb33e0ebe3",
+          "dweb:/ipfs/QmRBvV1X5FEsyxDAfMPZ4GNp7HvfK5gaKaLpp6o1EYwfFF"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/EIP712.sol": {
+        "keccak256": "0x0cf3ec5d6130aac057e69df14b1ff87baf9c6c2cb13bc545952def004e629ac0",
+        "urls": [
+          "bzz-raw://446419367266d271bf6953e4ae0423356a5cc4717f7b9a5a0532436de4be2d70",
+          "dweb:/ipfs/QmPV56wHs1Mqif6et6TYrhZ2QYPNmiVTmXWvQMhqWfKLk9"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/ERC20.sol": {
+        "keccak256": "0x10a0774f23f09b8617c9c62afe230829175c20be368ff327a7d529e4f7348bcb",
+        "urls": [
+          "bzz-raw://d126631fd60ce377ae605e7c2aab275dc7b72aac074940f6e3b36206ed1955ce",
+          "dweb:/ipfs/QmP23AyhL4xzHSDikcgpAKuCHoiFKr5qQfCkDAdSsz4peU"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/IERC20.sol": {
+        "keccak256": "0xd828a935a72a6d182912abba290e4debb8c684c36fd756088f7acb30e0b2bb76",
+        "urls": [
+          "bzz-raw://1e6ac013b95e9622917c5ad388dc73f0a389a76341597731746e54547aa9de8a",
+          "dweb:/ipfs/QmPB8qWcRPZaDsASgQpf5a6i2YrZ4TDV3Ebi25Mn9EAdf4"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/IERC20Permit.sol": {
+        "keccak256": "0xffe929ce55ef0cbdcc60eee8bc9375c295757ad13afe3d757646538aa0429ff5",
+        "urls": [
+          "bzz-raw://90091ad3a860b0baa930d9b4083b503eb9ce2d222f738ce3b009d434271a27ae",
+          "dweb:/ipfs/QmeQxy2YHbeumMXxKqEnXF7pGw2Ke43cHzttG59WYHibVV"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/ReentrancyGuard.sol": {
+        "keccak256": "0xfe6da463cd5a6df10b49020a69b0978a4ef65d029e747c515062ec4a3359c464",
+        "urls": [
+          "bzz-raw://203824853ae4896a6216d53aa537a6941c9992d528c9aa4dd385114dac0f169c",
+          "dweb:/ipfs/Qmdb6pN9EVQVHFkxfdMoWUKmRMx7BtVzqcXUqGJh8Xotgy"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/SafeERC20.sol": {
+        "keccak256": "0x16d3e14c841b54a0f59fac0b899c4fa2f7b15d8d24f562a91edaf5aa140d57f5",
+        "urls": [
+          "bzz-raw://75a09ab520f733adcd1830075e2024610e10a5fa7da418393feb6a4563eeae62",
+          "dweb:/ipfs/QmRUb62Q8i6wX1xw66TWhNRH6Nv247B6QeC75riBUEqHLy"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/SafeMath.sol": {
+        "keccak256": "0xafe0542eb14932a66ce6280fbe9991130ead5bbcb7836d0a822fc4a59810c100",
+        "urls": [
+          "bzz-raw://140c69f688c58bbf08f7b1b6f76dd89d72f9c84a3aab8ad1194679ee0acaa6e6",
+          "dweb:/ipfs/QmUCub3NpdGK1U4xjSwsCHNZnRokcM9NMhRtC2kLefYef8"
+        ],
+        "license": "MIT"
+      },
+      "contracts/pools/BalancerPoolToken.sol": {
+        "keccak256": "0x98ba9ab8cbd475a64405d5eecedbed1bb68b4adca54493894747f8e9f61a9e42",
+        "urls": [
+          "bzz-raw://b76d6c240ea5bc465a25ae03b498365a33ce2fcaf0d9aa9935f9ea721a2257de",
+          "dweb:/ipfs/Qmckfp5pP5c1eFst21NnJgnvyPz9iHGwpWHCXQfJv5HxkR"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/pools/BaseMinimalSwapInfoPool.sol": {
+        "keccak256": "0x6a634f43159cd970522a2005d13934d1d56a85edaee4290ded729340761e19c3",
+        "urls": [
+          "bzz-raw://7df58e880e130adcf476edcf89d32f923a4433bc7e77c208ace5b1fb07f4382e",
+          "dweb:/ipfs/QmPzv1PudDqkB9t6fXsQS8vA6kQL81kKdWUC4d5eiF6qDK"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/pools/BasePool.sol": {
+        "keccak256": "0x235470c212f95f6ba5faa0bff48dfff5459a4f8e9d97f72169d24985acaff275",
+        "urls": [
+          "bzz-raw://7dffdac4ab64c43899bf45b69d341cb2394f14dd26f85abab41b7fe632527eba",
+          "dweb:/ipfs/QmU4SzSagco6a8X6MuBmrwpjhkSiMf8LQCTr2WexV8tii5"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/pools/BasePoolAuthorization.sol": {
+        "keccak256": "0x080dfa64851c8f2bc9e989d37154453cf154609a792f8ca554478450290be7db",
+        "urls": [
+          "bzz-raw://6ee3e9fc531be5ae6976b4051318f5c9086e508e1cecdb5147dbd3d1c7efe4c0",
+          "dweb:/ipfs/QmQBUMC3aq2JY6PeS4baZydYADLgKm9eoHZ8LzsoENZBCd"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/pools/weighted/WeightedMath.sol": {
+        "keccak256": "0x675a769ba17ac42c06db05619f3a8d7f2b39bbfcc2798a1f17d6e1e4943943ec",
+        "urls": [
+          "bzz-raw://595d4e299e90199ba0899a255e8d783ec70196d227b3a5dc1063bf9400ae9c2d",
+          "dweb:/ipfs/QmcMts5b15A5KnwmhJiQBbzrZdgggzTcdmKJMqsjXzDyMa"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/pools/weighted/WeightedPool.sol": {
+        "keccak256": "0x4e73b22be8c4325be39cc05796926b173b867292d73fe051dcfa49aafd9fb9d7",
+        "urls": [
+          "bzz-raw://d860d703d2cfa251103fc927f55e2003c8bf49d941d35e3fcfcc6d57d8351612",
+          "dweb:/ipfs/QmTgr3Mk2BRj5TJQpbbJiHCjQdugtj96rgd4g2TNictepQ"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/pools/weighted/WeightedPoolUserDataHelpers.sol": {
+        "keccak256": "0x6a2f98e68608e65dd9c0de8c57c1fc2e1643789b18bcf75d7109d27cdf45d62f",
+        "urls": [
+          "bzz-raw://d8cacf0d22464128acf40d1eb55f872592233e883b8cb36ab9fe1051257a52e6",
+          "dweb:/ipfs/QmekLKMSgmEfz4tKBnJF9kmPc6PYg2nAs72bwuLT5To3Gt"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/ProtocolFeesCollector.sol": {
+        "keccak256": "0x67a0898b29a356085f4d7a83c52d1c794ebf07b6522133c9b9c7f5faf10d2184",
+        "urls": [
+          "bzz-raw://2bc6a0209840b9b6b695241122646ce9040716237e05b67cdb5445a961e8b374",
+          "dweb:/ipfs/QmfCtZLSbBXqMTZBFfzxx3VFquXbbaFD9tsRNc3y5jXozn"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IAsset.sol": {
+        "keccak256": "0x70ecf1d48c285d78718bd2e159345677038ed8a81c74444bedd6a5c61af9aff6",
+        "urls": [
+          "bzz-raw://8c7c210e449ea5d284abeaaed82e3bb3c203b57d8b3e5dfb6daedf76eaae31d1",
+          "dweb:/ipfs/QmfJWLPhCG6PcHNJMLNDbAM6nd2ZVFCexCXvJ9qQmRaNbn"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IAuthorizer.sol": {
+        "keccak256": "0x792871e208bba1dad291f8d1cffad86f4afa5e2360816bd9c43481f7297155f5",
+        "urls": [
+          "bzz-raw://af8ab65258e294c8ba0a5feee91208789f641181d225364b02123d38d9eec7d0",
+          "dweb:/ipfs/Qmb5HUXRaSrHJafwK1H8XRjcCTnAZMShTvBNhr1ovA1j2m"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IBasePool.sol": {
+        "keccak256": "0x1fdce4de26cad355f4ad93e4a5b66d5a5692c4cd2f0b6c2bb2c3aef3ee49422f",
+        "urls": [
+          "bzz-raw://fde5dea4a8a65dd019813530ecb4cc857484ff104e80cf18c12d196b0ec74973",
+          "dweb:/ipfs/QmPyVrmus8pqbPKofTonEgtWCCsn3j4MXFPsy481f8jav8"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IFlashLoanRecipient.sol": {
+        "keccak256": "0x6886740dcaebfb24a25f914ce5b4299aeab3fe0cc135a1707c0fe4e3d6d02cb6",
+        "urls": [
+          "bzz-raw://6a379297af3e38f7ba24c9c26285382bf5d7e36260590f9d06ce1b573cadd7d4",
+          "dweb:/ipfs/QmZWeYKn3UDBPJUrFCHty9g9fHWG46Q4BhhddmyfB1Ugj8"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IMinimalSwapInfoPool.sol": {
+        "keccak256": "0x7469919e147c0db8b4f290d310ca3816dec5d3c6cc6b258cf6e0df820a20a179",
+        "urls": [
+          "bzz-raw://ad47775f388a985c265ef4ca1d1531e4bffa97ef51a03fea9273a2ce8f1ab667",
+          "dweb:/ipfs/QmZ4mMm2rPPZ4eLHHUY82vxLLRyKXb5ekchgGvDReryiTS"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IPoolSwapStructs.sol": {
+        "keccak256": "0xe32bcd1cce37949796369b0026cf5cf34eb7273fa50ac239186e8cd4b822e196",
+        "urls": [
+          "bzz-raw://902110897e813cd71987854a651fe6386a9329dc22660bff8f55a4f95c0003d1",
+          "dweb:/ipfs/QmXt4MGtioai8goMrpawg8a88Qwdnk6P31kmPU1zMJmJ1d"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IVault.sol": {
+        "keccak256": "0xc1b1344fcb93f499269d9687514f0a72cc8164cfd3dd3da08a6af1f9e7c60168",
+        "urls": [
+          "bzz-raw://b7bf8d441a1fdbb2c040c1ee781f0c55b7ba28c1c4f829b6876fc301566b83ba",
+          "dweb:/ipfs/QmU2C7d4SKT8nwyXr3MEo2FHPgLUNBVoE1ngcrNHTq3h8q"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IWETH.sol": {
+        "keccak256": "0x621a25d9e3f3a4cd9e4493ab330a50a4456b6ea8fc568911fdd5486f78a4d3ab",
+        "urls": [
+          "bzz-raw://93a5ad052b725c300232952ba067abce53c0b167f0e55c44bfd5ba308d9d542b",
+          "dweb:/ipfs/QmdsRjQShAUbA1KGWhoKsvWTR2PffgfXNJBCU5hTmgLJVb"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/pools/weighted/WeightedPoolUserDataHelpers.sol",
+    "id": 12971,
+    "exportedSymbols": {
+      "IERC20": [
+        3847
+      ],
+      "WeightedPool": [
+        9974
+      ],
+      "WeightedPoolUserDataHelpers": [
+        12970
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "688:1846:32",
+    "nodes": [
+      {
+        "id": 12783,
+        "nodeType": "PragmaDirective",
+        "src": "688:23:32",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ]
+      },
+      {
+        "id": 12784,
+        "nodeType": "ImportDirective",
+        "src": "713:43:32",
+        "nodes": [],
+        "absolutePath": "contracts/lib/openzeppelin/IERC20.sol",
+        "file": "../../lib/openzeppelin/IERC20.sol",
+        "scope": 12971,
+        "sourceUnit": 3848,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12785,
+        "nodeType": "ImportDirective",
+        "src": "758:28:32",
+        "nodes": [],
+        "absolutePath": "contracts/pools/weighted/WeightedPool.sol",
+        "file": "./WeightedPool.sol",
+        "scope": 12971,
+        "sourceUnit": 9975,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12970,
+        "nodeType": "ContractDefinition",
+        "src": "788:1745:32",
+        "nodes": [
+          {
+            "id": 12801,
+            "nodeType": "FunctionDefinition",
+            "src": "830:148:32",
+            "nodes": [],
+            "body": {
+              "id": 12800,
+              "nodeType": "Block",
+              "src": "913:65:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 12794,
+                        "name": "self",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12787,
+                        "src": "941:4:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      },
+                      {
+                        "components": [
+                          {
+                            "expression": {
+                              "id": 12795,
+                              "name": "WeightedPool",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 9974,
+                              "src": "948:12:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                "typeString": "type(contract WeightedPool)"
+                              }
+                            },
+                            "id": 12796,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "JoinKind",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 8548,
+                            "src": "948:21:32",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_JoinKind_$8548_$",
+                              "typeString": "type(enum WeightedPool.JoinKind)"
+                            }
+                          }
+                        ],
+                        "id": 12797,
+                        "isConstant": false,
+                        "isInlineArray": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "TupleExpression",
+                        "src": "947:23:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_JoinKind_$8548_$",
+                          "typeString": "type(enum WeightedPool.JoinKind)"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        },
+                        {
+                          "typeIdentifier": "t_type$_t_enum$_JoinKind_$8548_$",
+                          "typeString": "type(enum WeightedPool.JoinKind)"
+                        }
+                      ],
+                      "expression": {
+                        "id": 12792,
+                        "name": "abi",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -1,
+                        "src": "930:3:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_abi",
+                          "typeString": "abi"
+                        }
+                      },
+                      "id": 12793,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "decode",
+                      "nodeType": "MemberAccess",
+                      "src": "930:10:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                        "typeString": "function () pure"
+                      }
+                    },
+                    "id": 12798,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "930:41:32",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_JoinKind_$8548",
+                      "typeString": "enum WeightedPool.JoinKind"
+                    }
+                  },
+                  "functionReturnParameters": 12791,
+                  "id": 12799,
+                  "nodeType": "Return",
+                  "src": "923:48:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "joinKind",
+            "parameters": {
+              "id": 12788,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12787,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12801,
+                  "src": "848:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12786,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "848:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "847:19:32"
+            },
+            "returnParameters": {
+              "id": 12791,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12790,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12801,
+                  "src": "890:21:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_JoinKind_$8548",
+                    "typeString": "enum WeightedPool.JoinKind"
+                  },
+                  "typeName": {
+                    "id": 12789,
+                    "name": "WeightedPool.JoinKind",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8548,
+                    "src": "890:21:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_JoinKind_$8548",
+                      "typeString": "enum WeightedPool.JoinKind"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "889:23:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12817,
+            "nodeType": "FunctionDefinition",
+            "src": "984:148:32",
+            "nodes": [],
+            "body": {
+              "id": 12816,
+              "nodeType": "Block",
+              "src": "1067:65:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 12810,
+                        "name": "self",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12803,
+                        "src": "1095:4:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      },
+                      {
+                        "components": [
+                          {
+                            "expression": {
+                              "id": 12811,
+                              "name": "WeightedPool",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 9974,
+                              "src": "1102:12:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                "typeString": "type(contract WeightedPool)"
+                              }
+                            },
+                            "id": 12812,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "ExitKind",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 8552,
+                            "src": "1102:21:32",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_ExitKind_$8552_$",
+                              "typeString": "type(enum WeightedPool.ExitKind)"
+                            }
+                          }
+                        ],
+                        "id": 12813,
+                        "isConstant": false,
+                        "isInlineArray": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "TupleExpression",
+                        "src": "1101:23:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_ExitKind_$8552_$",
+                          "typeString": "type(enum WeightedPool.ExitKind)"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        },
+                        {
+                          "typeIdentifier": "t_type$_t_enum$_ExitKind_$8552_$",
+                          "typeString": "type(enum WeightedPool.ExitKind)"
+                        }
+                      ],
+                      "expression": {
+                        "id": 12808,
+                        "name": "abi",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -1,
+                        "src": "1084:3:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_abi",
+                          "typeString": "abi"
+                        }
+                      },
+                      "id": 12809,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "decode",
+                      "nodeType": "MemberAccess",
+                      "src": "1084:10:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                        "typeString": "function () pure"
+                      }
+                    },
+                    "id": 12814,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1084:41:32",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_ExitKind_$8552",
+                      "typeString": "enum WeightedPool.ExitKind"
+                    }
+                  },
+                  "functionReturnParameters": 12807,
+                  "id": 12815,
+                  "nodeType": "Return",
+                  "src": "1077:48:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exitKind",
+            "parameters": {
+              "id": 12804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12803,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12817,
+                  "src": "1002:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12802,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1002:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1001:19:32"
+            },
+            "returnParameters": {
+              "id": 12807,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12806,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12817,
+                  "src": "1044:21:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_ExitKind_$8552",
+                    "typeString": "enum WeightedPool.ExitKind"
+                  },
+                  "typeName": {
+                    "id": 12805,
+                    "name": "WeightedPool.ExitKind",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8552,
+                    "src": "1044:21:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_ExitKind_$8552",
+                      "typeString": "enum WeightedPool.ExitKind"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1043:23:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12840,
+            "nodeType": "FunctionDefinition",
+            "src": "1152:181:32",
+            "nodes": [],
+            "body": {
+              "id": 12839,
+              "nodeType": "Block",
+              "src": "1248:85:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12837,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "components": [
+                        null,
+                        {
+                          "id": 12825,
+                          "name": "amountsIn",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12823,
+                          "src": "1261:9:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                            "typeString": "uint256[] memory"
+                          }
+                        }
+                      ],
+                      "id": 12826,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "TupleExpression",
+                      "src": "1258:13:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                        "typeString": "tuple(,uint256[] memory)"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 12829,
+                          "name": "self",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12819,
+                          "src": "1285:4:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "components": [
+                            {
+                              "expression": {
+                                "id": 12830,
+                                "name": "WeightedPool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9974,
+                                "src": "1292:12:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                  "typeString": "type(contract WeightedPool)"
+                                }
+                              },
+                              "id": 12831,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "JoinKind",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8548,
+                              "src": "1292:21:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_JoinKind_$8548_$",
+                                "typeString": "type(enum WeightedPool.JoinKind)"
+                              }
+                            },
+                            {
+                              "baseExpression": {
+                                "id": 12833,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "1315:7:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": {
+                                  "id": 12832,
+                                  "name": "uint256",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "1315:7:32",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 12834,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "1315:9:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                                "typeString": "type(uint256[] memory)"
+                              }
+                            }
+                          ],
+                          "id": 12835,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "1291:34:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_JoinKind_$8548_$_$_t_type$_t_array$_t_uint256_$dyn_memory_ptr_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.JoinKind),type(uint256[] memory))"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_JoinKind_$8548_$_$_t_type$_t_array$_t_uint256_$dyn_memory_ptr_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.JoinKind),type(uint256[] memory))"
+                          }
+                        ],
+                        "expression": {
+                          "id": 12827,
+                          "name": "abi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -1,
+                          "src": "1274:3:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_abi",
+                            "typeString": "abi"
+                          }
+                        },
+                        "id": 12828,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "decode",
+                        "nodeType": "MemberAccess",
+                        "src": "1274:10:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 12836,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1274:52:32",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$_t_enum$_JoinKind_$8548_$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                        "typeString": "tuple(enum WeightedPool.JoinKind,uint256[] memory)"
+                      }
+                    },
+                    "src": "1258:68:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12838,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1258:68:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialAmountsIn",
+            "parameters": {
+              "id": 12820,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12819,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12840,
+                  "src": "1178:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12818,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1178:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1177:19:32"
+            },
+            "returnParameters": {
+              "id": 12824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12823,
+                  "mutability": "mutable",
+                  "name": "amountsIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12840,
+                  "src": "1220:26:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12821,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1220:7:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 12822,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1220:9:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1219:28:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12868,
+            "nodeType": "FunctionDefinition",
+            "src": "1339:266:32",
+            "nodes": [],
+            "body": {
+              "id": 12867,
+              "nodeType": "Block",
+              "src": "1494:111:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12865,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "components": [
+                        null,
+                        {
+                          "id": 12850,
+                          "name": "amountsIn",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12846,
+                          "src": "1507:9:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                            "typeString": "uint256[] memory"
+                          }
+                        },
+                        {
+                          "id": 12851,
+                          "name": "minBPTAmountOut",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12848,
+                          "src": "1518:15:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "id": 12852,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "TupleExpression",
+                      "src": "1504:30:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$_t_array$_t_uint256_$dyn_memory_ptr_$_t_uint256_$",
+                        "typeString": "tuple(,uint256[] memory,uint256)"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 12855,
+                          "name": "self",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12842,
+                          "src": "1548:4:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "components": [
+                            {
+                              "expression": {
+                                "id": 12856,
+                                "name": "WeightedPool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9974,
+                                "src": "1555:12:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                  "typeString": "type(contract WeightedPool)"
+                                }
+                              },
+                              "id": 12857,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "JoinKind",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8548,
+                              "src": "1555:21:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_JoinKind_$8548_$",
+                                "typeString": "type(enum WeightedPool.JoinKind)"
+                              }
+                            },
+                            {
+                              "baseExpression": {
+                                "id": 12859,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "1578:7:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": {
+                                  "id": 12858,
+                                  "name": "uint256",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "1578:7:32",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 12860,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "1578:9:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                                "typeString": "type(uint256[] memory)"
+                              }
+                            },
+                            {
+                              "id": 12862,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "1589:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12861,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1589:7:32",
+                                "typeDescriptions": {}
+                              }
+                            }
+                          ],
+                          "id": 12863,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "1554:43:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_JoinKind_$8548_$_$_t_type$_t_array$_t_uint256_$dyn_memory_ptr_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.JoinKind),type(uint256[] memory),type(uint256))"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_JoinKind_$8548_$_$_t_type$_t_array$_t_uint256_$dyn_memory_ptr_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.JoinKind),type(uint256[] memory),type(uint256))"
+                          }
+                        ],
+                        "expression": {
+                          "id": 12853,
+                          "name": "abi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -1,
+                          "src": "1537:3:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_abi",
+                            "typeString": "abi"
+                          }
+                        },
+                        "id": 12854,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "decode",
+                        "nodeType": "MemberAccess",
+                        "src": "1537:10:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 12864,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1537:61:32",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$_t_enum$_JoinKind_$8548_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_uint256_$",
+                        "typeString": "tuple(enum WeightedPool.JoinKind,uint256[] memory,uint256)"
+                      }
+                    },
+                    "src": "1504:94:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12866,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1504:94:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exactTokensInForBptOut",
+            "parameters": {
+              "id": 12843,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12842,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12868,
+                  "src": "1371:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12841,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1371:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1370:19:32"
+            },
+            "returnParameters": {
+              "id": 12849,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12846,
+                  "mutability": "mutable",
+                  "name": "amountsIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12868,
+                  "src": "1437:26:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12844,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1437:7:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 12845,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1437:9:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12848,
+                  "mutability": "mutable",
+                  "name": "minBPTAmountOut",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12868,
+                  "src": "1465:23:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12847,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1465:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1436:53:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12894,
+            "nodeType": "FunctionDefinition",
+            "src": "1611:222:32",
+            "nodes": [],
+            "body": {
+              "id": 12893,
+              "nodeType": "Block",
+              "src": "1726:107:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12891,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "components": [
+                        null,
+                        {
+                          "id": 12877,
+                          "name": "bptAmountOut",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12873,
+                          "src": "1739:12:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "id": 12878,
+                          "name": "tokenIndex",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12875,
+                          "src": "1753:10:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "id": 12879,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "TupleExpression",
+                      "src": "1736:28:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$_t_uint256_$_t_uint256_$",
+                        "typeString": "tuple(,uint256,uint256)"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 12882,
+                          "name": "self",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12870,
+                          "src": "1778:4:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "components": [
+                            {
+                              "expression": {
+                                "id": 12883,
+                                "name": "WeightedPool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9974,
+                                "src": "1785:12:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                  "typeString": "type(contract WeightedPool)"
+                                }
+                              },
+                              "id": 12884,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "JoinKind",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8548,
+                              "src": "1785:21:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_JoinKind_$8548_$",
+                                "typeString": "type(enum WeightedPool.JoinKind)"
+                              }
+                            },
+                            {
+                              "id": 12886,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "1808:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12885,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1808:7:32",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            {
+                              "id": 12888,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "1817:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12887,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1817:7:32",
+                                "typeDescriptions": {}
+                              }
+                            }
+                          ],
+                          "id": 12889,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "1784:41:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_JoinKind_$8548_$_$_t_type$_t_uint256_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.JoinKind),type(uint256),type(uint256))"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_JoinKind_$8548_$_$_t_type$_t_uint256_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.JoinKind),type(uint256),type(uint256))"
+                          }
+                        ],
+                        "expression": {
+                          "id": 12880,
+                          "name": "abi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -1,
+                          "src": "1767:3:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_abi",
+                            "typeString": "abi"
+                          }
+                        },
+                        "id": 12881,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "decode",
+                        "nodeType": "MemberAccess",
+                        "src": "1767:10:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 12890,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1767:59:32",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$_t_enum$_JoinKind_$8548_$_t_uint256_$_t_uint256_$",
+                        "typeString": "tuple(enum WeightedPool.JoinKind,uint256,uint256)"
+                      }
+                    },
+                    "src": "1736:90:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12892,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1736:90:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenInForExactBptOut",
+            "parameters": {
+              "id": 12871,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12870,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12894,
+                  "src": "1642:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12869,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1642:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1641:19:32"
+            },
+            "returnParameters": {
+              "id": 12876,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12873,
+                  "mutability": "mutable",
+                  "name": "bptAmountOut",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12894,
+                  "src": "1684:20:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12872,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1684:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12875,
+                  "mutability": "mutable",
+                  "name": "tokenIndex",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12894,
+                  "src": "1706:18:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12874,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1706:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1683:42:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12920,
+            "nodeType": "FunctionDefinition",
+            "src": "1853:220:32",
+            "nodes": [],
+            "body": {
+              "id": 12919,
+              "nodeType": "Block",
+              "src": "1967:106:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12917,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "components": [
+                        null,
+                        {
+                          "id": 12903,
+                          "name": "bptAmountIn",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12899,
+                          "src": "1980:11:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "id": 12904,
+                          "name": "tokenIndex",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12901,
+                          "src": "1993:10:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "id": 12905,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "TupleExpression",
+                      "src": "1977:27:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$_t_uint256_$_t_uint256_$",
+                        "typeString": "tuple(,uint256,uint256)"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 12908,
+                          "name": "self",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12896,
+                          "src": "2018:4:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "components": [
+                            {
+                              "expression": {
+                                "id": 12909,
+                                "name": "WeightedPool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9974,
+                                "src": "2025:12:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                  "typeString": "type(contract WeightedPool)"
+                                }
+                              },
+                              "id": 12910,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "ExitKind",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8552,
+                              "src": "2025:21:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_ExitKind_$8552_$",
+                                "typeString": "type(enum WeightedPool.ExitKind)"
+                              }
+                            },
+                            {
+                              "id": 12912,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "2048:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12911,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "2048:7:32",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            {
+                              "id": 12914,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "2057:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12913,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "2057:7:32",
+                                "typeDescriptions": {}
+                              }
+                            }
+                          ],
+                          "id": 12915,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "2024:41:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_ExitKind_$8552_$_$_t_type$_t_uint256_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.ExitKind),type(uint256),type(uint256))"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_ExitKind_$8552_$_$_t_type$_t_uint256_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.ExitKind),type(uint256),type(uint256))"
+                          }
+                        ],
+                        "expression": {
+                          "id": 12906,
+                          "name": "abi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -1,
+                          "src": "2007:3:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_abi",
+                            "typeString": "abi"
+                          }
+                        },
+                        "id": 12907,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "decode",
+                        "nodeType": "MemberAccess",
+                        "src": "2007:10:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 12916,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "2007:59:32",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$_t_enum$_ExitKind_$8552_$_t_uint256_$_t_uint256_$",
+                        "typeString": "tuple(enum WeightedPool.ExitKind,uint256,uint256)"
+                      }
+                    },
+                    "src": "1977:89:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12918,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1977:89:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exactBptInForTokenOut",
+            "parameters": {
+              "id": 12897,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12896,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12920,
+                  "src": "1884:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12895,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1884:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1883:19:32"
+            },
+            "returnParameters": {
+              "id": 12902,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12899,
+                  "mutability": "mutable",
+                  "name": "bptAmountIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12920,
+                  "src": "1926:19:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12898,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1926:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12901,
+                  "mutability": "mutable",
+                  "name": "tokenIndex",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12920,
+                  "src": "1947:18:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12900,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1947:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1925:41:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12941,
+            "nodeType": "FunctionDefinition",
+            "src": "2079:180:32",
+            "nodes": [],
+            "body": {
+              "id": 12940,
+              "nodeType": "Block",
+              "src": "2174:85:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12938,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "components": [
+                        null,
+                        {
+                          "id": 12927,
+                          "name": "bptAmountIn",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12925,
+                          "src": "2187:11:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "id": 12928,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "TupleExpression",
+                      "src": "2184:15:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$_t_uint256_$",
+                        "typeString": "tuple(,uint256)"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 12931,
+                          "name": "self",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12922,
+                          "src": "2213:4:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "components": [
+                            {
+                              "expression": {
+                                "id": 12932,
+                                "name": "WeightedPool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9974,
+                                "src": "2220:12:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                  "typeString": "type(contract WeightedPool)"
+                                }
+                              },
+                              "id": 12933,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "ExitKind",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8552,
+                              "src": "2220:21:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_ExitKind_$8552_$",
+                                "typeString": "type(enum WeightedPool.ExitKind)"
+                              }
+                            },
+                            {
+                              "id": 12935,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "2243:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12934,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "2243:7:32",
+                                "typeDescriptions": {}
+                              }
+                            }
+                          ],
+                          "id": 12936,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "2219:32:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_ExitKind_$8552_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.ExitKind),type(uint256))"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_ExitKind_$8552_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.ExitKind),type(uint256))"
+                          }
+                        ],
+                        "expression": {
+                          "id": 12929,
+                          "name": "abi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -1,
+                          "src": "2202:3:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_abi",
+                            "typeString": "abi"
+                          }
+                        },
+                        "id": 12930,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "decode",
+                        "nodeType": "MemberAccess",
+                        "src": "2202:10:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 12937,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "2202:50:32",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$_t_enum$_ExitKind_$8552_$_t_uint256_$",
+                        "typeString": "tuple(enum WeightedPool.ExitKind,uint256)"
+                      }
+                    },
+                    "src": "2184:68:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12939,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2184:68:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exactBptInForTokensOut",
+            "parameters": {
+              "id": 12923,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12922,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12941,
+                  "src": "2111:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12921,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2111:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2110:19:32"
+            },
+            "returnParameters": {
+              "id": 12926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12925,
+                  "mutability": "mutable",
+                  "name": "bptAmountIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12941,
+                  "src": "2153:19:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12924,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2153:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2152:21:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 12969,
+            "nodeType": "FunctionDefinition",
+            "src": "2265:266:32",
+            "nodes": [],
+            "body": {
+              "id": 12968,
+              "nodeType": "Block",
+              "src": "2420:111:32",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12966,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "components": [
+                        null,
+                        {
+                          "id": 12951,
+                          "name": "amountsOut",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12947,
+                          "src": "2433:10:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                            "typeString": "uint256[] memory"
+                          }
+                        },
+                        {
+                          "id": 12952,
+                          "name": "maxBPTAmountIn",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12949,
+                          "src": "2445:14:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "id": 12953,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "TupleExpression",
+                      "src": "2430:30:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$_t_array$_t_uint256_$dyn_memory_ptr_$_t_uint256_$",
+                        "typeString": "tuple(,uint256[] memory,uint256)"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 12956,
+                          "name": "self",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12943,
+                          "src": "2474:4:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        {
+                          "components": [
+                            {
+                              "expression": {
+                                "id": 12957,
+                                "name": "WeightedPool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9974,
+                                "src": "2481:12:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_WeightedPool_$9974_$",
+                                  "typeString": "type(contract WeightedPool)"
+                                }
+                              },
+                              "id": 12958,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "ExitKind",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8552,
+                              "src": "2481:21:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_ExitKind_$8552_$",
+                                "typeString": "type(enum WeightedPool.ExitKind)"
+                              }
+                            },
+                            {
+                              "baseExpression": {
+                                "id": 12960,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "2504:7:32",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": {
+                                  "id": 12959,
+                                  "name": "uint256",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "2504:7:32",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 12961,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "2504:9:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                                "typeString": "type(uint256[] memory)"
+                              }
+                            },
+                            {
+                              "id": 12963,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "2515:7:32",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint256_$",
+                                "typeString": "type(uint256)"
+                              },
+                              "typeName": {
+                                "id": 12962,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "2515:7:32",
+                                "typeDescriptions": {}
+                              }
+                            }
+                          ],
+                          "id": 12964,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "2480:43:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_ExitKind_$8552_$_$_t_type$_t_array$_t_uint256_$dyn_memory_ptr_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.ExitKind),type(uint256[] memory),type(uint256))"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          },
+                          {
+                            "typeIdentifier": "t_tuple$_t_type$_t_enum$_ExitKind_$8552_$_$_t_type$_t_array$_t_uint256_$dyn_memory_ptr_$_$_t_type$_t_uint256_$_$",
+                            "typeString": "tuple(type(enum WeightedPool.ExitKind),type(uint256[] memory),type(uint256))"
+                          }
+                        ],
+                        "expression": {
+                          "id": 12954,
+                          "name": "abi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -1,
+                          "src": "2463:3:32",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_abi",
+                            "typeString": "abi"
+                          }
+                        },
+                        "id": 12955,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "decode",
+                        "nodeType": "MemberAccess",
+                        "src": "2463:10:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 12965,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "2463:61:32",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$_t_enum$_ExitKind_$8552_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_uint256_$",
+                        "typeString": "tuple(enum WeightedPool.ExitKind,uint256[] memory,uint256)"
+                      }
+                    },
+                    "src": "2430:94:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12967,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2430:94:32"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bptInForExactTokensOut",
+            "parameters": {
+              "id": 12944,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12943,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12969,
+                  "src": "2297:17:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12942,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2297:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2296:19:32"
+            },
+            "returnParameters": {
+              "id": 12950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12947,
+                  "mutability": "mutable",
+                  "name": "amountsOut",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12969,
+                  "src": "2363:27:32",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12945,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2363:7:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 12946,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2363:9:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12949,
+                  "mutability": "mutable",
+                  "name": "maxBPTAmountIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12969,
+                  "src": "2392:22:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12948,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2392:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2362:53:32"
+            },
+            "scope": 12970,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          12970
+        ],
+        "name": "WeightedPoolUserDataHelpers",
+        "scope": 12971
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 32
+}

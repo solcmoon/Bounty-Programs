@@ -1,0 +1,542 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSample",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "logPairPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "accLogPairPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "logBptPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "accLogBptPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "logInvariant",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "accLogInvariant",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalSamples",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getSample(uint256)": "60d1507c",
+    "getTotalSamples()": "b48b5b40"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getSample\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"logPairPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"accLogPairPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"logBptPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"accLogBptPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"logInvariant\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"accLogInvariant\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotalSamples\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getSample(uint256)\":{\"details\":\"Returns the raw data of the sample at `index`.\"},\"getTotalSamples()\":{\"details\":\"Returns the total number of samples.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/pools/oracle/IWeightedPoolPriceOracle.sol\":\"IWeightedPoolPriceOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/pools/oracle/IWeightedPoolPriceOracle.sol\":{\"keccak256\":\"0x28b11cae33f1c706d4c6de316f2d04c8b2e7157e64661d33e93bda1ed631a6e7\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://408059773253778037963ff8a7f9b9c52b4f6529ae677b692685f499552b2ec3\",\"dweb:/ipfs/QmerYMcgAyqGMTJHwZKyhbH2PtVgZ5zf4g667a1AvmLU8x\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSample",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "logPairPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "accLogPairPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "logBptPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "accLogBptPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "logInvariant",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "accLogInvariant",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalSamples",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getSample(uint256)": {
+            "details": "Returns the raw data of the sample at `index`."
+          },
+          "getTotalSamples()": {
+            "details": "Returns the total number of samples."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/pools/oracle/IWeightedPoolPriceOracle.sol": "IWeightedPoolPriceOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/pools/oracle/IWeightedPoolPriceOracle.sol": {
+        "keccak256": "0x28b11cae33f1c706d4c6de316f2d04c8b2e7157e64661d33e93bda1ed631a6e7",
+        "urls": [
+          "bzz-raw://408059773253778037963ff8a7f9b9c52b4f6529ae677b692685f499552b2ec3",
+          "dweb:/ipfs/QmerYMcgAyqGMTJHwZKyhbH2PtVgZ5zf4g667a1AvmLU8x"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/pools/oracle/IWeightedPoolPriceOracle.sol",
+    "id": 6639,
+    "exportedSymbols": {
+      "IWeightedPoolPriceOracle": [
+        6638
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "688:601:24",
+    "nodes": [
+      {
+        "id": 6611,
+        "nodeType": "PragmaDirective",
+        "src": "688:23:24",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ]
+      },
+      {
+        "id": 6638,
+        "nodeType": "ContractDefinition",
+        "src": "713:575:24",
+        "nodes": [
+          {
+            "id": 6631,
+            "nodeType": "FunctionDefinition",
+            "src": "829:327:24",
+            "nodes": [],
+            "documentation": {
+              "id": 6612,
+              "nodeType": "StructuredDocumentation",
+              "src": "754:70:24",
+              "text": " @dev Returns the raw data of the sample at `index`."
+            },
+            "functionSelector": "60d1507c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSample",
+            "parameters": {
+              "id": 6615,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6614,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "848:13:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6613,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "848:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "847:15:24"
+            },
+            "returnParameters": {
+              "id": 6630,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6617,
+                  "mutability": "mutable",
+                  "name": "logPairPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "923:19:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 6616,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "923:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6619,
+                  "mutability": "mutable",
+                  "name": "accLogPairPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "956:22:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 6618,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "956:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6621,
+                  "mutability": "mutable",
+                  "name": "logBptPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "992:18:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 6620,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "992:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6623,
+                  "mutability": "mutable",
+                  "name": "accLogBptPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "1024:21:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 6622,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1024:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6625,
+                  "mutability": "mutable",
+                  "name": "logInvariant",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "1059:19:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 6624,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1059:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6627,
+                  "mutability": "mutable",
+                  "name": "accLogInvariant",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "1092:22:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 6626,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1092:6:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6629,
+                  "mutability": "mutable",
+                  "name": "timestamp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6631,
+                  "src": "1128:17:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6628,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1128:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "909:246:24"
+            },
+            "scope": 6638,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6637,
+            "nodeType": "FunctionDefinition",
+            "src": "1227:59:24",
+            "nodes": [],
+            "documentation": {
+              "id": 6632,
+              "nodeType": "StructuredDocumentation",
+              "src": "1162:60:24",
+              "text": " @dev Returns the total number of samples."
+            },
+            "functionSelector": "b48b5b40",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotalSamples",
+            "parameters": {
+              "id": 6633,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1251:2:24"
+            },
+            "returnParameters": {
+              "id": 6636,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6635,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6637,
+                  "src": "1277:7:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6634,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1277:7:24",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1276:9:24"
+            },
+            "scope": 6638,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          6638
+        ],
+        "name": "IWeightedPoolPriceOracle",
+        "scope": 6639
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 24
+}

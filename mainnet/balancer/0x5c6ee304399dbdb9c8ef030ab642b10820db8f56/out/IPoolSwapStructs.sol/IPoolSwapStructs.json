@@ -1,0 +1,559 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/vault/interfaces/IPoolSwapStructs.sol\":\"IPoolSwapStructs\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/lib/helpers/Authentication.sol\":{\"keccak256\":\"0xea892213ec2967f53e26a0dd833bde01e4d9b6e49dd91e6c59ff00044f83c28d\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://0bc36f6335254bef8a4515e898a7ce5b3f36350e4d7d1dd45a0aa3d1356fdae5\",\"dweb:/ipfs/QmRRatu77hTPReUnRidk3wjgEMyGYVgh9wDrkiMiKmtWtR\"]},\"contracts/lib/helpers/BalancerErrors.sol\":{\"keccak256\":\"0x4fccd72b44004509b27032aa9e9e91a24becaa67d65b79564e41cb99758f80d4\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://a1ee2a9953990313f6431e9449bc2a4fa3046833b302e9d82368fb959f57c99b\",\"dweb:/ipfs/QmatdXi22EDCpokZAWFGRMR28B9ES4TpiNnFwzUDjVqfzC\"]},\"contracts/lib/helpers/IAuthentication.sol\":{\"keccak256\":\"0xfd687ced203d2c6da8189792e1719a5182faf45956129388b231ee76740b99a6\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://581aa664e84e950cd9bb747bf6022867db63c64f67d9556a86b5f04f871c2c5d\",\"dweb:/ipfs/QmRa6EEV3LXJaHzymztiLqyeAzmE4jAgBEEi3mi8R5cfFa\"]},\"contracts/lib/helpers/ISignaturesValidator.sol\":{\"keccak256\":\"0x2fe46b13b7c8bfc6f5c539c0b73d6325813f383f551b71fb6bca8dafd06964e1\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://8e651ae7a3a3652c8bb7aaa42c2cce5924310df62a923d9ec50ddb9c850d2995\",\"dweb:/ipfs/QmTHz9y18L5FD7v9GcvxGWSLJuin2KCUEYoARTgz8njce8\"]},\"contracts/lib/helpers/ITemporarilyPausable.sol\":{\"keccak256\":\"0xb3e5b7c63f80b80ef3f0138eac56c397a439bf6b667fc06d5061aa869828b562\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://978d66fba0721a1a67e29a32eaddab8d1f92ab2fb2d611724ea8d0d3c9b0e95b\",\"dweb:/ipfs/QmfG4foZvx3NDZao7d4VvGzL4Uxtk8VWNJXvgo9fiAJxZv\"]},\"contracts/lib/helpers/InputHelpers.sol\":{\"keccak256\":\"0xd58eb6851269729d3ea0d739f812c67c3e750b046ef1653ae12134e668925d28\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://9cb5db2184b915b6640593f2e0840de1c39144b1d692f5f1bb13958b28647d7c\",\"dweb:/ipfs/QmbdfxJJo5hwJMG1Cvi2DoBthwENVkdAGJ6JDAWP8JLzW9\"]},\"contracts/lib/openzeppelin/IERC20.sol\":{\"keccak256\":\"0xd828a935a72a6d182912abba290e4debb8c684c36fd756088f7acb30e0b2bb76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1e6ac013b95e9622917c5ad388dc73f0a389a76341597731746e54547aa9de8a\",\"dweb:/ipfs/QmPB8qWcRPZaDsASgQpf5a6i2YrZ4TDV3Ebi25Mn9EAdf4\"]},\"contracts/lib/openzeppelin/ReentrancyGuard.sol\":{\"keccak256\":\"0xfe6da463cd5a6df10b49020a69b0978a4ef65d029e747c515062ec4a3359c464\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://203824853ae4896a6216d53aa537a6941c9992d528c9aa4dd385114dac0f169c\",\"dweb:/ipfs/Qmdb6pN9EVQVHFkxfdMoWUKmRMx7BtVzqcXUqGJh8Xotgy\"]},\"contracts/lib/openzeppelin/SafeERC20.sol\":{\"keccak256\":\"0x16d3e14c841b54a0f59fac0b899c4fa2f7b15d8d24f562a91edaf5aa140d57f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://75a09ab520f733adcd1830075e2024610e10a5fa7da418393feb6a4563eeae62\",\"dweb:/ipfs/QmRUb62Q8i6wX1xw66TWhNRH6Nv247B6QeC75riBUEqHLy\"]},\"contracts/vault/ProtocolFeesCollector.sol\":{\"keccak256\":\"0x67a0898b29a356085f4d7a83c52d1c794ebf07b6522133c9b9c7f5faf10d2184\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://2bc6a0209840b9b6b695241122646ce9040716237e05b67cdb5445a961e8b374\",\"dweb:/ipfs/QmfCtZLSbBXqMTZBFfzxx3VFquXbbaFD9tsRNc3y5jXozn\"]},\"contracts/vault/interfaces/IAsset.sol\":{\"keccak256\":\"0x70ecf1d48c285d78718bd2e159345677038ed8a81c74444bedd6a5c61af9aff6\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://8c7c210e449ea5d284abeaaed82e3bb3c203b57d8b3e5dfb6daedf76eaae31d1\",\"dweb:/ipfs/QmfJWLPhCG6PcHNJMLNDbAM6nd2ZVFCexCXvJ9qQmRaNbn\"]},\"contracts/vault/interfaces/IAuthorizer.sol\":{\"keccak256\":\"0x792871e208bba1dad291f8d1cffad86f4afa5e2360816bd9c43481f7297155f5\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://af8ab65258e294c8ba0a5feee91208789f641181d225364b02123d38d9eec7d0\",\"dweb:/ipfs/Qmb5HUXRaSrHJafwK1H8XRjcCTnAZMShTvBNhr1ovA1j2m\"]},\"contracts/vault/interfaces/IFlashLoanRecipient.sol\":{\"keccak256\":\"0x6886740dcaebfb24a25f914ce5b4299aeab3fe0cc135a1707c0fe4e3d6d02cb6\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://6a379297af3e38f7ba24c9c26285382bf5d7e36260590f9d06ce1b573cadd7d4\",\"dweb:/ipfs/QmZWeYKn3UDBPJUrFCHty9g9fHWG46Q4BhhddmyfB1Ugj8\"]},\"contracts/vault/interfaces/IPoolSwapStructs.sol\":{\"keccak256\":\"0xe32bcd1cce37949796369b0026cf5cf34eb7273fa50ac239186e8cd4b822e196\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://902110897e813cd71987854a651fe6386a9329dc22660bff8f55a4f95c0003d1\",\"dweb:/ipfs/QmXt4MGtioai8goMrpawg8a88Qwdnk6P31kmPU1zMJmJ1d\"]},\"contracts/vault/interfaces/IVault.sol\":{\"keccak256\":\"0xc1b1344fcb93f499269d9687514f0a72cc8164cfd3dd3da08a6af1f9e7c60168\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://b7bf8d441a1fdbb2c040c1ee781f0c55b7ba28c1c4f829b6876fc301566b83ba\",\"dweb:/ipfs/QmU2C7d4SKT8nwyXr3MEo2FHPgLUNBVoE1ngcrNHTq3h8q\"]},\"contracts/vault/interfaces/IWETH.sol\":{\"keccak256\":\"0x621a25d9e3f3a4cd9e4493ab330a50a4456b6ea8fc568911fdd5486f78a4d3ab\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://93a5ad052b725c300232952ba067abce53c0b167f0e55c44bfd5ba308d9d542b\",\"dweb:/ipfs/QmdsRjQShAUbA1KGWhoKsvWTR2PffgfXNJBCU5hTmgLJVb\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/vault/interfaces/IPoolSwapStructs.sol": "IPoolSwapStructs"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/lib/helpers/Authentication.sol": {
+        "keccak256": "0xea892213ec2967f53e26a0dd833bde01e4d9b6e49dd91e6c59ff00044f83c28d",
+        "urls": [
+          "bzz-raw://0bc36f6335254bef8a4515e898a7ce5b3f36350e4d7d1dd45a0aa3d1356fdae5",
+          "dweb:/ipfs/QmRRatu77hTPReUnRidk3wjgEMyGYVgh9wDrkiMiKmtWtR"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/BalancerErrors.sol": {
+        "keccak256": "0x4fccd72b44004509b27032aa9e9e91a24becaa67d65b79564e41cb99758f80d4",
+        "urls": [
+          "bzz-raw://a1ee2a9953990313f6431e9449bc2a4fa3046833b302e9d82368fb959f57c99b",
+          "dweb:/ipfs/QmatdXi22EDCpokZAWFGRMR28B9ES4TpiNnFwzUDjVqfzC"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/IAuthentication.sol": {
+        "keccak256": "0xfd687ced203d2c6da8189792e1719a5182faf45956129388b231ee76740b99a6",
+        "urls": [
+          "bzz-raw://581aa664e84e950cd9bb747bf6022867db63c64f67d9556a86b5f04f871c2c5d",
+          "dweb:/ipfs/QmRa6EEV3LXJaHzymztiLqyeAzmE4jAgBEEi3mi8R5cfFa"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/ISignaturesValidator.sol": {
+        "keccak256": "0x2fe46b13b7c8bfc6f5c539c0b73d6325813f383f551b71fb6bca8dafd06964e1",
+        "urls": [
+          "bzz-raw://8e651ae7a3a3652c8bb7aaa42c2cce5924310df62a923d9ec50ddb9c850d2995",
+          "dweb:/ipfs/QmTHz9y18L5FD7v9GcvxGWSLJuin2KCUEYoARTgz8njce8"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/ITemporarilyPausable.sol": {
+        "keccak256": "0xb3e5b7c63f80b80ef3f0138eac56c397a439bf6b667fc06d5061aa869828b562",
+        "urls": [
+          "bzz-raw://978d66fba0721a1a67e29a32eaddab8d1f92ab2fb2d611724ea8d0d3c9b0e95b",
+          "dweb:/ipfs/QmfG4foZvx3NDZao7d4VvGzL4Uxtk8VWNJXvgo9fiAJxZv"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/helpers/InputHelpers.sol": {
+        "keccak256": "0xd58eb6851269729d3ea0d739f812c67c3e750b046ef1653ae12134e668925d28",
+        "urls": [
+          "bzz-raw://9cb5db2184b915b6640593f2e0840de1c39144b1d692f5f1bb13958b28647d7c",
+          "dweb:/ipfs/QmbdfxJJo5hwJMG1Cvi2DoBthwENVkdAGJ6JDAWP8JLzW9"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/lib/openzeppelin/IERC20.sol": {
+        "keccak256": "0xd828a935a72a6d182912abba290e4debb8c684c36fd756088f7acb30e0b2bb76",
+        "urls": [
+          "bzz-raw://1e6ac013b95e9622917c5ad388dc73f0a389a76341597731746e54547aa9de8a",
+          "dweb:/ipfs/QmPB8qWcRPZaDsASgQpf5a6i2YrZ4TDV3Ebi25Mn9EAdf4"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/ReentrancyGuard.sol": {
+        "keccak256": "0xfe6da463cd5a6df10b49020a69b0978a4ef65d029e747c515062ec4a3359c464",
+        "urls": [
+          "bzz-raw://203824853ae4896a6216d53aa537a6941c9992d528c9aa4dd385114dac0f169c",
+          "dweb:/ipfs/Qmdb6pN9EVQVHFkxfdMoWUKmRMx7BtVzqcXUqGJh8Xotgy"
+        ],
+        "license": "MIT"
+      },
+      "contracts/lib/openzeppelin/SafeERC20.sol": {
+        "keccak256": "0x16d3e14c841b54a0f59fac0b899c4fa2f7b15d8d24f562a91edaf5aa140d57f5",
+        "urls": [
+          "bzz-raw://75a09ab520f733adcd1830075e2024610e10a5fa7da418393feb6a4563eeae62",
+          "dweb:/ipfs/QmRUb62Q8i6wX1xw66TWhNRH6Nv247B6QeC75riBUEqHLy"
+        ],
+        "license": "MIT"
+      },
+      "contracts/vault/ProtocolFeesCollector.sol": {
+        "keccak256": "0x67a0898b29a356085f4d7a83c52d1c794ebf07b6522133c9b9c7f5faf10d2184",
+        "urls": [
+          "bzz-raw://2bc6a0209840b9b6b695241122646ce9040716237e05b67cdb5445a961e8b374",
+          "dweb:/ipfs/QmfCtZLSbBXqMTZBFfzxx3VFquXbbaFD9tsRNc3y5jXozn"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IAsset.sol": {
+        "keccak256": "0x70ecf1d48c285d78718bd2e159345677038ed8a81c74444bedd6a5c61af9aff6",
+        "urls": [
+          "bzz-raw://8c7c210e449ea5d284abeaaed82e3bb3c203b57d8b3e5dfb6daedf76eaae31d1",
+          "dweb:/ipfs/QmfJWLPhCG6PcHNJMLNDbAM6nd2ZVFCexCXvJ9qQmRaNbn"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IAuthorizer.sol": {
+        "keccak256": "0x792871e208bba1dad291f8d1cffad86f4afa5e2360816bd9c43481f7297155f5",
+        "urls": [
+          "bzz-raw://af8ab65258e294c8ba0a5feee91208789f641181d225364b02123d38d9eec7d0",
+          "dweb:/ipfs/Qmb5HUXRaSrHJafwK1H8XRjcCTnAZMShTvBNhr1ovA1j2m"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IFlashLoanRecipient.sol": {
+        "keccak256": "0x6886740dcaebfb24a25f914ce5b4299aeab3fe0cc135a1707c0fe4e3d6d02cb6",
+        "urls": [
+          "bzz-raw://6a379297af3e38f7ba24c9c26285382bf5d7e36260590f9d06ce1b573cadd7d4",
+          "dweb:/ipfs/QmZWeYKn3UDBPJUrFCHty9g9fHWG46Q4BhhddmyfB1Ugj8"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IPoolSwapStructs.sol": {
+        "keccak256": "0xe32bcd1cce37949796369b0026cf5cf34eb7273fa50ac239186e8cd4b822e196",
+        "urls": [
+          "bzz-raw://902110897e813cd71987854a651fe6386a9329dc22660bff8f55a4f95c0003d1",
+          "dweb:/ipfs/QmXt4MGtioai8goMrpawg8a88Qwdnk6P31kmPU1zMJmJ1d"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IVault.sol": {
+        "keccak256": "0xc1b1344fcb93f499269d9687514f0a72cc8164cfd3dd3da08a6af1f9e7c60168",
+        "urls": [
+          "bzz-raw://b7bf8d441a1fdbb2c040c1ee781f0c55b7ba28c1c4f829b6876fc301566b83ba",
+          "dweb:/ipfs/QmU2C7d4SKT8nwyXr3MEo2FHPgLUNBVoE1ngcrNHTq3h8q"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "contracts/vault/interfaces/IWETH.sol": {
+        "keccak256": "0x621a25d9e3f3a4cd9e4493ab330a50a4456b6ea8fc568911fdd5486f78a4d3ab",
+        "urls": [
+          "bzz-raw://93a5ad052b725c300232952ba067abce53c0b167f0e55c44bfd5ba308d9d542b",
+          "dweb:/ipfs/QmdsRjQShAUbA1KGWhoKsvWTR2PffgfXNJBCU5hTmgLJVb"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/vault/interfaces/IPoolSwapStructs.sol",
+    "id": 13381,
+    "exportedSymbols": {
+      "Authentication": [
+        76
+      ],
+      "Errors": [
+        403
+      ],
+      "IAsset": [
+        13243
+      ],
+      "IAuthentication": [
+        414
+      ],
+      "IAuthorizer": [
+        13258
+      ],
+      "IERC20": [
+        3847
+      ],
+      "IFlashLoanRecipient": [
+        13336
+      ],
+      "IPoolSwapStructs": [
+        13380
+      ],
+      "ISignaturesValidator": [
+        432
+      ],
+      "ITemporarilyPausable": [
+        451
+      ],
+      "IVault": [
+        13842
+      ],
+      "IWETH": [
+        13857
+      ],
+      "InputHelpers": [
+        582
+      ],
+      "ProtocolFeesCollector": [
+        13239
+      ],
+      "ReentrancyGuard": [
+        3939
+      ],
+      "SafeERC20": [
+        4034
+      ],
+      "_require": [
+        94
+      ],
+      "_revert": [
+        102
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "688:1908:39",
+    "nodes": [
+      {
+        "id": 13357,
+        "nodeType": "PragmaDirective",
+        "src": "688:23:39",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ]
+      },
+      {
+        "id": 13358,
+        "nodeType": "PragmaDirective",
+        "src": "712:33:39",
+        "nodes": [],
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ]
+      },
+      {
+        "id": 13359,
+        "nodeType": "ImportDirective",
+        "src": "747:43:39",
+        "nodes": [],
+        "absolutePath": "contracts/lib/openzeppelin/IERC20.sol",
+        "file": "../../lib/openzeppelin/IERC20.sol",
+        "scope": 13381,
+        "sourceUnit": 3848,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 13360,
+        "nodeType": "ImportDirective",
+        "src": "792:22:39",
+        "nodes": [],
+        "absolutePath": "contracts/vault/interfaces/IVault.sol",
+        "file": "./IVault.sol",
+        "scope": 13381,
+        "sourceUnit": 13843,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 13380,
+        "nodeType": "ContractDefinition",
+        "src": "816:1779:39",
+        "nodes": [
+          {
+            "id": 13379,
+            "nodeType": "StructDefinition",
+            "src": "2320:273:39",
+            "nodes": [],
+            "canonicalName": "IPoolSwapStructs.SwapRequest",
+            "members": [
+              {
+                "constant": false,
+                "id": 13362,
+                "mutability": "mutable",
+                "name": "kind",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2349:20:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SwapKind_$13666",
+                  "typeString": "enum IVault.SwapKind"
+                },
+                "typeName": {
+                  "id": 13361,
+                  "name": "IVault.SwapKind",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 13666,
+                  "src": "2349:15:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SwapKind_$13666",
+                    "typeString": "enum IVault.SwapKind"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13364,
+                "mutability": "mutable",
+                "name": "tokenIn",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2379:14:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IERC20_$3847",
+                  "typeString": "contract IERC20"
+                },
+                "typeName": {
+                  "id": 13363,
+                  "name": "IERC20",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3847,
+                  "src": "2379:6:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$3847",
+                    "typeString": "contract IERC20"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13366,
+                "mutability": "mutable",
+                "name": "tokenOut",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2403:15:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IERC20_$3847",
+                  "typeString": "contract IERC20"
+                },
+                "typeName": {
+                  "id": 13365,
+                  "name": "IERC20",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3847,
+                  "src": "2403:6:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$3847",
+                    "typeString": "contract IERC20"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13368,
+                "mutability": "mutable",
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2428:14:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 13367,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2428:7:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13370,
+                "mutability": "mutable",
+                "name": "poolId",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2473:14:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 13369,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2473:7:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13372,
+                "mutability": "mutable",
+                "name": "lastChangeBlock",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2497:23:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 13371,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2497:7:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13374,
+                "mutability": "mutable",
+                "name": "from",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2530:12:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 13373,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2530:7:39",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13376,
+                "mutability": "mutable",
+                "name": "to",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2552:10:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 13375,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2552:7:39",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 13378,
+                "mutability": "mutable",
+                "name": "userData",
+                "nodeType": "VariableDeclaration",
+                "scope": 13379,
+                "src": "2572:14:39",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 13377,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2572:5:39",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "SwapRequest",
+            "scope": 13380,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          13380
+        ],
+        "name": "IPoolSwapStructs",
+        "scope": 13381
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 39
+}
